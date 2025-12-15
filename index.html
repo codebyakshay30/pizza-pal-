@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza Pal - Delivered Smarter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-black': '#050505',
+              'brand-white': '#FFFFFF',
+              'brand-neon': '#CCFF00', // Neon Yellow
+              'brand-gray': '#F4F4F4',
+              'brand-dark-gray': '#1A1A1A',
+            },
+            fontFamily: {
+              sans: ['Space Grotesk', 'sans-serif'],
+              display: ['Syne', 'sans-serif'],
+            },
+            boxShadow: {
+              'soft': '0 8px 30px rgba(0,0,0,0.04)',
+              'float': '0 20px 40px rgba(0,0,0,0.08)',
+              'glow': '0 0 20px rgba(204, 255, 0, 0.4)',
+              'neon': '4px 4px 0px #CCFF00',
+              'hard': '4px 4px 0px #000000',
+            },
+            animation: {
+              'spin-slow': 'spin 20s linear infinite',
+              'float': 'float 6s ease-in-out infinite',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-20px)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      ::-webkit-scrollbar {
+        width: 0px;
+        background: transparent;
+      }
+      body {
+        background-color: #FFFFFF;
+        color: #050505;
+      }
+      .glass {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+      }
+      .glass-dark {
+        background: rgba(5, 5, 5, 0.8);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.6",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "zustand": "https://aistudiocdn.com/zustand@^5.0.8"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
